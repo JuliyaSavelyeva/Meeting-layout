@@ -6,52 +6,14 @@ body {
   width: 65%;
   margin: 0 auto;
   background-color: #f7f7f7;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
-.navigation {
-  display: flex;
+@media (max-width: 1200px) {
+  body {
+    width: 95%;
+  }
 }
-
-.navigation__title {
-  flex-grow: 1;
-  font-size: 2.25em;
-  letter-spacing: 0.1em;
-}
-
-.search {
-  display: flex;
-}
-
-.search__filter,
-.search__sort {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 0;
-  font-weight: 700;
-}
-
-.search__sort {
-  margin-left: 20px;
-}
-
-.search__label {
-  text-transform: uppercase;
-  font-size: 0.75em;
-  color: #666666;
-}
-
-.search__select {
-  width: 100px;
-  border: none;
-  background-color: #f7f7f7;
-  font-weight: 700;
-  margin-top: 10px;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -64,55 +26,76 @@ body {
   background-color: #fff;
   border: 1px solid #f7f7f7;
 }
-
 .product__image img {
   width: 100%;
   padding: 20px;
   margin-top: 40px;
 }
-
 .product__info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .product__name {
   font-weight: 700;
   margin-bottom: 5px;
 }
-
 .product__price {
   margin: 0 0 20px 0;
   color: #666666;
 }
 
-@media screen and (max-width: 1200px) {
-  body {
-    width: 95%;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .product {
     flex: 0 25%;
   }
 }
-
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .product {
     flex: 0 50%;
   }
 }
+.navigation {
+  display: flex;
+}
+.navigation__title {
+  flex-grow: 1;
+  font-size: 2.25em;
+  letter-spacing: 0.1em;
+}
 
-@media screen and (max-width: 480px) {
+.search {
+  display: flex;
+}
+.search__filter, .search__sort {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  font-weight: 700;
+}
+.search__sort {
+  margin-left: 20px;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  color: #666666;
+}
+
+select {
+  width: 100px;
+  border: none;
+  background-color: #f7f7f7;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: -4px;
+}
+
+@media (max-width: 480px) {
   .navigation {
     flex-direction: column;
   }
 }
 
-/* @media screen and (max-width: 900px) {
-  .products {
-    width: 100%;
-  }
-} */
+/*# sourceMappingURL=style.css.map */
